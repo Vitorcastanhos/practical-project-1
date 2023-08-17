@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<section class="sec">
+			<div class="container">
+				<div class="limit">
+					<header>CADASTRO</header>
+
+					<!-- <div class="start"> -->
+					<input type="text" id="name" placeholder="Full Name" />
+					<input type="email" id="email" placeholder="E-mail" />
+					<input type="password" id="password" placeholder="Password" />
+				</div>
+
+				<div class="birth">
+					<input type="number" min="0" max="31" id="day" placeholder="Day" />
+					<input type="month" id="month" placeholder="Month" /> <!-- para chrome -->
+					<!-- <input type="year" id="year" placeholder="Year" /> para mozila-->
+				</div>
+
+				<div class="container_mark">
+					<div class="mark">
+						<input type="checkbox" id="html" />
+						<label for="html">HTML</label>
+
+						<input type="checkbox" id="css" />
+						<label for="css">CSS</label>
+
+						<input type="checkbox" id="js" />
+						<label for="js">JS</label>
+					</div>
+				</div>
+
+				<div class="about">
+					<p id="para">About me</p>
+					<textarea name="aboutme" id="aboutme" cols="5" rows="5"></textarea>
+					<p>Sex</p>
+
+					<div class="sex">
+						<input type="radio" name="sex" id="male" checked />
+						<label for="male">M</label>
+						<input type="radio" name="sex" id="female" />
+						<label for="female">F</label>
+					</div>
+
+					<button class="btn">Submit</button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
