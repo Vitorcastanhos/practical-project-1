@@ -12,7 +12,7 @@ body {
 	flex-direction: column;
 	max-width: 500px;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 0 40px;
 	border-radius: 8px;
 	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.100);
 	background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
