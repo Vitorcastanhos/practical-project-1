@@ -7,24 +7,24 @@
 	</head>
 
 	<body>
-		<section class="sec">
-			<div class="container">
-				<div class="limit">
-					<header>CADASTRO</header>
+		<main class="container">
+			<form class="wrapper">
+				<div>
+					<h1>CADASTRO</h1>
+					<div class="limit">
+						<label class="form-label" for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Full Name" />
 
-					<!-- <div class="start"> -->
-					<input type="text" id="name" placeholder="Full Name" />
-					<input type="email" id="email" placeholder="E-mail" />
-					<input type="password" id="password" placeholder="Password" />
-				</div>
+						<label class="form-label" for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="E-mail" />
 
-				<div class="birth">
-					<input type="number" min="0" max="31" id="day" placeholder="Day" />
-					<input type="month" id="month" placeholder="Month" /> <!-- para chrome -->
-					<!-- <input type="year" id="year" placeholder="Year" /> para mozila-->
-				</div>
+						<label class="form-label" for="password">Password</label>
+						<input type="password" id="password" name="password" placeholder="Password" />
 
-				<div class="container_mark">
+						<label class="form-label" for="date">Date</label>
+						<input type="date" name="date" id="date" />
+					</div>
+
 					<div class="mark">
 						<input type="checkbox" id="html" />
 						<label for="html">HTML</label>
@@ -33,25 +33,26 @@
 						<label for="css">CSS</label>
 
 						<input type="checkbox" id="js" />
-						<label for="js">JS</label>
-					</div>
-				</div>
-
-				<div class="about">
-					<p id="para">About me</p>
-					<textarea name="aboutme" id="aboutme" cols="5" rows="5"></textarea>
-					<p>Sex</p>
-
-					<div class="sex">
-						<input type="radio" name="sex" id="male" checked />
-						<label for="male">M</label>
-						<input type="radio" name="sex" id="female" />
-						<label for="female">F</label>
+						<label for="js">JavaScript</label>
 					</div>
 
-					<button class="btn">Submit</button>
+					<div class="about">
+						<label class="form-label" for="aboutme">About me</label>
+						<textarea style="resize: none" name="aboutme" id="aboutme" cols="5" rows="5"></textarea>
+
+						<h3>Sex</h3>
+						<div class="gender">
+							<input type="radio" name="sex" id="male" checked />
+							<label class="form-label" for="male">M</label>
+
+							<input type="radio" name="sex" id="female" />
+							<label class="form-label" for="female">F</label>
+						</div>
+
+						<button class="btn">Submit</button>
+					</div>
 				</div>
-			</div>
-		</section>
+			</form>
+		</main>
 	</body>
 </html>
